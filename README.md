@@ -11,9 +11,9 @@ A full 2d game based on godot . The player have to collect coins which are in th
 - GDScript
 
 <h1> Controlls </h1>
-- left arrow for left side
-- right arrow for right side
-- space bar for jump
+- left arrow = left side
+- right arrow = right side
+- space bar = jump
 
 <h1> How to Run </h1>
 1. Just go to itch.io and search "Solar Rising"
