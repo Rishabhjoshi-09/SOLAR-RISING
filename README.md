@@ -1,6 +1,7 @@
 <h1>Solar Rising </h1>
 <br><br>
 
+<img width="494" height="423" alt="WhatsApp Image 2026-05-02 at 12 41 06 PM" src="https://github.com/user-attachments/assets/98494267-3ae2-428d-a9fe-750b58b55da0" />
 
 
 <img width="1191" height="674" alt="Screenshot 2026-05-03 112546" src="https://github.com/user-attachments/assets/ed558e6c-8c6e-43cf-b2f5-f3813eb09bed" />
