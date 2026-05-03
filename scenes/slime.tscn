@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://qfb1ly157ggv"]
+
+[ext_resource type="PackedScene" uid="uid://05fd1mosdbm2" path="res://scenes/killzone.tscn" id="2_n6pvg"]
+[ext_resource type="Texture2D" uid="uid://dblopassnbab6" path="res://assests/sprites/poision.jpeg" id="2_pjw23"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2gj0"]
+atlas = ExtResource("2_pjw23")
+region = Rect2(0, 0, 268, 166)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n6pvg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2gj0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjw23"]
+size = Vector2(114, 60.363636)
+
+[node name="Slime" type="Node2D" unique_id=1243615184]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=361283274]
+position = Vector2(-7.750003, -24.5)
+scale = Vector2(0.42350745, 0.28313252)
+sprite_frames = SubResource("SpriteFrames_n6pvg")
+autoplay = "default"
+
+[node name="Killzone" parent="." unique_id=1307557937 instance=ExtResource("2_n6pvg")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=290403369]
+position = Vector2(-8, -24)
+scale = Vector2(1, 0.79518074)
+shape = SubResource("RectangleShape2D_pjw23")

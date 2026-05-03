@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://d1h8qfo078c5h"]
+
+[ext_resource type="Script" uid="uid://t6oy3r7q7i1f" path="res://scrips/menu.gd" id="1_o0tnf"]
+[ext_resource type="Texture2D" uid="uid://c07qi5j5ubilv" path="res://assests/sprites/interface.jpeg" id="1_xdvgc"]
+[ext_resource type="AudioStream" uid="uid://b54rc00lo6r60" path="res://assests/sounds/click.mp3.wav" id="2_11y2r"]
+[ext_resource type="FontFile" uid="uid://co8dnvwu6uu4n" path="res://assests/fonts/PixelOperator8.ttf" id="3_o0tnf"]
+
+[node name="Control" type="Control" unique_id=1818524084]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_o0tnf")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1546719305]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1110.0
+offset_bottom = 606.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xdvgc")
+expand_mode = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=788137153]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1112.0
+offset_bottom = 606.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=993615092]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="PLAY" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1491119626]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.23137255, 0.10980392, 0.627451, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "PLAY"
+
+[node name="SETTINGS" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1400890464]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.23137255, 0.10980392, 0.627451, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "SETTINGS"
+
+[node name="STATS" type="Button" parent="CenterContainer/VBoxContainer" unique_id=775579363]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.23137255, 0.10980392, 0.627451, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "STATS"
+
+[node name="QUIT" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1326411281]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.6452266, 0.09806017, 0.12323304, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "QUIT
+"
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="." unique_id=693876745]
+stream = ExtResource("2_11y2r")
+
+[node name="TeamName" type="Label" parent="." unique_id=1471647794]
+layout_mode = 0
+offset_left = 959.0
+offset_top = 7.0
+offset_right = 1219.0
+offset_bottom = 170.0
+theme_override_fonts/font = ExtResource("3_o0tnf")
+theme_override_font_sizes/font_size = 60
+text = "Rise
+"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1763197543]
+modulate = Color(1, 1, 1, 0)
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1108.0
+offset_bottom = 566.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/PLAY" to="." method="_on_play_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/PLAY" to="." method="_on_play_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/PLAY" to="." method="_on_play_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/SETTINGS" to="." method="_on_settings_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/SETTINGS" to="." method="_on_settings_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/SETTINGS" to="." method="_on_settings_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/STATS" to="." method="_on_stats_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/STATS" to="." method="_on_stats_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/STATS" to="." method="_on_stats_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/QUIT" to="." method="_on_quit_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/QUIT" to="." method="_on_quit_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/QUIT" to="." method="_on_quit_pressed"]
