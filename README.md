@@ -31,6 +31,9 @@ A full 2d game based on godot . The player have to collect coins which are in th
 - space bar = jump
 
 <h1> How to Run </h1>
-1. Just go to itch.io and search "Solar Rising"
-2. Just click "Run Game"
- or 
+1. Just go to itch.io and search "Solar Rising" <br>
+2. Just click "Run Game"<br>
+      <h1> OR </h1>
+1. Just Click on the link given below: <br>
+https://rishabhjoshi-09.itch.io/solar-rising
+
