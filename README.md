@@ -7,8 +7,8 @@ A full 2d game based on godot . The player have to collect coins which are in th
 
 <h1> Build With </h1>
 
-Godot Engine
-GDScript
+. Godot Engine
+. GDScript
 
 <h1> Controlls </h1>
 left arrow for left side
