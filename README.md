@@ -65,7 +65,7 @@ Prerequisites
 
 -Git installed to clone the repository.
 
-nstallation
+Installation
 
 1. Clone the repository
 
@@ -84,9 +84,6 @@ Click Import or Scan.
 Select the project.godot file from the cloned folder.
 
 Open the project and press F6 or F5 to run it, depending on your scene and project configuration.
-
-
-
 
 
 
