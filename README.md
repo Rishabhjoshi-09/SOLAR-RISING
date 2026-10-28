@@ -17,18 +17,80 @@
 
 
 <h1>About the Game</h1>
+SOLAR RISING is a 2D adventure platformer built with the Godot Engine and GDScript.
 
-A full 2d game based on godot . The player have to collect coins which are in the path to reach a clean city and a have to survive from falling out in the poision .
+Embark on a journey through a dangerous environment, collect coins scattered along your path, and make your way towards a cleaner city. But stay alert — one wrong move can send you falling into the poisonous danger below!
+
+With simple controls and an easy-to-understand objective, SOLAR RISING offers an engaging gameplay experience while highlighting the idea of a cleaner, greener future.
+
+
+
+
+
+<h1>The Idea Behind Solar Rising</h1>
+A cleaner future begins with the choices we make.
+
+SOLAR RISING combines a simple gaming objective with an environmental theme: navigate through danger, collect what you need, and keep moving towards a cleaner city.
+
+Sometimes, even a small journey can represent a bigger goal.
+
+
+
+
 
 <h1> Build With </h1>
 
 - Godot Engine
 - GDScript
 
+
+
+
+
 <h1> Controlls </h1>
 - left arrow = left side<br>
 - right arrow = right side<br>
 - space bar = jump
+
+
+
+
+
+<h1>Run Locally</h1>
+Want to explore the project or run it on your own machine? Follow these steps.
+
+Prerequisites
+
+-Godot Engine installed on your computer.
+
+-Git installed to clone the repository.
+
+nstallation
+
+1. Clone the repository
+
+git clone https://github.com/Rishabhjoshi-09/SOLAR-RISING.git
+
+2. Navigate to the project folder
+
+cd SOLAR-RISING
+
+3. Open the project in Godot
+
+Launch Godot Engine.
+
+Click Import or Scan.
+
+Select the project.godot file from the cloned folder.
+
+Open the project and press F6 or F5 to run it, depending on your scene and project configuration.
+
+
+
+
+
+
+
 
 <h1> How to Run </h1>
 1. Just go to itch.io and search "Solar Rising" <br>
@@ -36,4 +98,3 @@ A full 2d game based on godot . The player have to collect coins which are in th
       <h1> OR </h1>
 1. Just Click on the link given below: <br>
 https://rishabhjoshi-09.itch.io/solar-rising
-
